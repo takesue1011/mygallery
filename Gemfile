@@ -41,3 +41,7 @@ gem 'spring',        group: :development
 gem 'pry-rails'
 gem 'compass-rails'
 gem 'sprockets', '2.11.0'
+gem 'therubyracer' # javascript runtime。lessをコンパイルするために必要
+gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
+gem 'twitter-bootstrap-rails' # Bootstrapの本体
+gem 'devise'

@@ -6,10 +6,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
-<body>
 
-<%= yield %>
+  <body>
+    <div id="header" class="container" style="background:#f0ad4e;">MyGallery</div>
 
-</body>
+    <%= yield %>
+
+    <div id="footer" class="container" style="background:white;">Copyright My Gallery 2014.</div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

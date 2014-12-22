@@ -1,0 +1,24 @@
+<div class="contents row">
+  <%= form_tag('/photos', :method => :post) do %>
+    <h3>
+      写真の投稿
+    </h3>
+    <form class="form-inline" style="margin-bottom:15px;">
+      <div class="form-group">
+        <input type="text" name="image" class="form-control" placeholder="投稿したい写真">
+      </div>
+      <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="タイトル">
+      </div>
+      <div class="form-group">
+        <input type="text" name="photographer" class="form-control" placeholder="写真家">
+      </div>
+      <div class="form-group">
+        <input type="text" name="caption" class="form-control" placeholder="説明文">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="登録する！" class="btn btn-primary">
+      </div>
+    </form>
+  <% end %>
+</div>
