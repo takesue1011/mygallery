@@ -1,5 +1,6 @@
 <!--部分テンプレートの作成-->
-<div class="contents__post" style="background-image: url(<%= photo.image %>);">
+<div class="content__post">  <!-- 画像サーバー準備が必要 -->
+  <h2><%= image_tag(url_for(:controller => 'attachments', :action => 'show', :path => photo.image_url)) %></h2>
   <p>
     <%= br(photo.caption) %>
   </p>

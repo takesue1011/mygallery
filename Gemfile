@@ -45,3 +45,5 @@ gem 'therubyracer' # javascript runtime。lessをコンパイルするために�
 gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
 gem 'twitter-bootstrap-rails' # Bootstrapの本体
 gem 'devise'
+gem 'carrierwave' # 画像のアップロード機能
+gem 'rmagick' # 画像のリサイズ機能
