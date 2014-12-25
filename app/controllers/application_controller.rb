@@ -9,4 +9,12 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up)<<:nickname
   end
 
+  def after_sign_in_path_for(resource)
+    "/users/#{current_user.id}"
+  end
+
+  def after_sign_out_path_for(resource)
+    "/"
+  end
+
 end
