@@ -2,12 +2,9 @@
   <p class="resizeimage">
     <img src="http://3.bp.blogspot.com/_usfcTevxPF8/TQ--GrHhVfI/AAAAAAAAH1Y/TmjjkeNOD_4/s1600/img090.jpg" alt="トップ画像" >
   </p>
-  <button type="button" class="btn btn-primary btn-block">
-    <%= link_to "Sign in wiht Facebook", user_omniauth_authorize_path(:facebook) %>
-  </button>
-  <button type="button" class="btn btn-default btn-block" onclick="location.href='/users/sign_up'">メールアドレスにて会員登録</button>
-  <button type="button" class="btn btn-primary btn-block">
-    <%= link_to "Sign in wiht Facebook", user_omniauth_authorize_path(:facebook) %>
-  </button>
+  <a href="<%= user_omniauth_authorize_path(:facebook) %>", method="post">
+  <button type="button" class="btn btn-primary btn-block">Sign in with Facebook</button>
+  </a>
   <button type="button" class="btn btn-default btn-block"  onclick="location.href='/users/sign_in'">メールアドレスにてログイン</button>
+  <button type="button" class="btn btn-default btn-block" onclick="location.href='/users/sign_up'">メールアドレスにて会員登録</button>
 </div>
