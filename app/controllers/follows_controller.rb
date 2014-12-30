@@ -1,10 +1,14 @@
 class FollowsController < ApplicationController
 
-  def   # ユーザの選択（nameにて検索）
+  def index  # ユーザの一覧（eachメソッド使う）
     
   end
 
-  def   # ユーザのフォロー
+  def follow  # ユーザの選択
+    
+  end
+
+  def create  # フォロー情報をcreate
     
   end
 
